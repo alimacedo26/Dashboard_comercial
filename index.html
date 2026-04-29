@@ -225,7 +225,7 @@
 
 </style>
 </head>
-<body>
+<body style="">
 
 <div class="header">
   <div class="header-logo">
@@ -238,7 +238,7 @@
   <div class="header-right">
     <div id="last-update-badge" style="display:flex;flex-direction:column;align-items:flex-end;gap:1px;cursor:pointer;" onclick="showUploadModal()" title="Clique para atualizar dados">
       <div style="font-size:9px;color:#aaa;text-transform:uppercase;letter-spacing:0.5px;">Última atualização</div>
-      <div id="last-update-time" style="font-size:11px;color:var(--amarelo);font-weight:700;">29/04/2026 09:01</div>
+      <div id="last-update-time" style="font-size:11px;color:var(--amarelo);font-weight:700;">29/04/2026 09:55</div>
     </div>
     <div class="live-badge"><div class="live-dot"></div>LIVE</div>
     <button class="update-btn" onclick="showUploadModal()">↑ Atualizar</button>
@@ -276,51 +276,51 @@
   <div id="alerts-section"></div>
 
   <div class="kpi-grid" id="kpi-novos">
-    <div class="kpi-card vermelho">
+    <div class="kpi-card ">
       <div class="kpi-label">✅ Faturado</div>
-      <div class="kpi-value">1</div>
+      <div class="kpi-value">164</div>
       <div class="kpi-sub">veículos no período</div>
-      <span class="kpi-badge badge-red">0% da meta</span>
+      <span class="kpi-badge badge-yellow">86% da meta</span>
     </div>
     <div class="kpi-card clickable" style="border-top:3px solid #3182CE;" onclick="openAFaturarModal(true)">
       <div class="kpi-label">⏳ A Faturar</div>
-      <div class="kpi-value">0</div>
+      <div class="kpi-value">126</div>
       <div class="kpi-sub">com pedido em aberto</div>
-      <span class="kpi-badge badge-yellow">0% da meta</span>
+      <span class="kpi-badge badge-yellow">66% da meta</span>
       <div class="click-hint">👆 clique para ver lista</div>
     </div>
     <div class="kpi-card clickable" style="border-top:3px solid #805AD5;" onclick="openMontadosModal()">
       <div class="kpi-label">🔮 Pedidos Futuros</div>
-      <div class="kpi-value">36</div>
+      <div class="kpi-value">60</div>
       <div class="kpi-sub">montados s/ chassi</div>
-      <span class="kpi-badge" style="background:#FAF5FF;color:#6B46C1;">0% da meta</span>
+      <span class="kpi-badge" style="background:#FAF5FF;color:#6B46C1;">32% da meta</span>
       <div class="click-hint">👆 clique para ver lista</div>
     </div>
     <div class="kpi-card azul">
       <div class="kpi-label">🎯 Meta do Mês</div>
-      <div class="kpi-value">0</div>
+      <div class="kpi-value">190</div>
       <div class="kpi-sub">objetivo</div>
-      <span class="kpi-badge badge-yellow">Gap: 0</span>
+      <span class="kpi-badge badge-yellow">Gap: 26</span>
     </div>
     <div class="kpi-card clickable" onclick="openEstoqueModal(true)">
       <div class="kpi-label">📦 Estoque Disponível</div>
-      <div class="kpi-value">0</div>
+      <div class="kpi-value">182</div>
       <div class="kpi-sub">sem pedido (incl. blind.)</div>
       <div class="click-hint">👆 clique para ver lista</div>
     </div>
     
     <div class="kpi-card clickable" style="border-top:3px solid #7B341E;" onclick="openBlindadosModal()">
       <div class="kpi-label">🛡️ Blindados Disp.</div>
-      <div class="kpi-value">0</div>
+      <div class="kpi-value">12</div>
       <div class="kpi-sub">do estoque total</div>
-      <span class="kpi-badge badge-yellow">0% do estoque</span>
+      <span class="kpi-badge badge-yellow">7% do estoque</span>
       <div class="click-hint">👆 clique para ver lista</div>
     </div>
-    <div class="kpi-card vermelho">
+    <div class="kpi-card verde">
       <div class="kpi-label">📈 Potencial (Fat+AFat)</div>
-      <div class="kpi-value">0%</div>
-      <div class="kpi-sub">1 un. fat+a faturar</div>
-      <span class="kpi-badge badge-red">c/ estoque: 0%</span>
+      <div class="kpi-value">153%</div>
+      <div class="kpi-sub">290 un. fat+a faturar</div>
+      <span class="kpi-badge badge-green">c/ estoque: 248%</span>
     </div>
   </div>
 
@@ -329,9 +329,9 @@
     <div class="meta-diaria-val" id="meta-diaria-val">0</div>
     <div class="meta-diaria-sub">veículos/dia útil para atingir o objetivo</div>
     <div class="meta-diaria-breakdown" id="meta-diaria-breakdown">
-    <div class="mdb-item"><div class="mdb-item-label">Meta Total</div><div class="mdb-item-val">0</div></div>
-    <div class="mdb-item"><div class="mdb-item-label">(−) Faturado</div><div class="mdb-item-val">1</div></div>
-    <div class="mdb-item"><div class="mdb-item-label">(−) A Faturar</div><div class="mdb-item-val">0</div></div>
+    <div class="mdb-item"><div class="mdb-item-label">Meta Total</div><div class="mdb-item-val">190</div></div>
+    <div class="mdb-item"><div class="mdb-item-label">(−) Faturado</div><div class="mdb-item-val">164</div></div>
+    <div class="mdb-item"><div class="mdb-item-label">(−) A Faturar</div><div class="mdb-item-val">126</div></div>
     <div class="mdb-item"><div class="mdb-item-label">Restante</div><div class="mdb-item-val">0</div></div>
     <div class="mdb-item"><div class="mdb-item-label">Dias Restantes</div><div class="mdb-item-val">14</div></div>
   </div>
@@ -342,7 +342,43 @@
       <span>Termômetro de Meta — Novos</span>
       <span id="thermo-mes-label" style="font-size:11px;color:var(--text-light)">Abr</span>
     </div>
-    <div id="thermo-novos"></div>
+    <div id="thermo-novos">
+      <div class="loja-progress">
+        <div class="loja-prog-header">
+          <span class="loja-prog-name">BYD Ibirapuera</span>
+          <span class="loja-prog-vals">
+            <span style="color:var(--amarelo)">66 fat.</span>
+            <span style="color:#3182CE"> + 66 a fat.</span>
+            &nbsp;/&nbsp;76
+            &nbsp;<strong style="color:var(--verde)">174%</strong>
+            &nbsp;<span style="color:var(--verde)">✓ meta coberta</span>
+          </span>
+        </div>
+        <div class="progress-track">
+          <div class="progress-fill prog-yellow" style="width:87%;border-radius:6px 0 0 6px"></div>
+          <div style="position:absolute;top:0;left:87%;width:13%;height:100%;background:#3182CE;opacity:0.7;border-radius:0 6px 6px 0"></div>
+        </div>
+        <div style="display:flex;gap:12px;margin-top:3px;font-size:10px;"><span style="display:flex;align-items:center;gap:3px;"><span style="width:8px;height:8px;border-radius:2px;background:var(--amarelo);display:inline-block"></span>Faturado</span><span style="display:flex;align-items:center;gap:3px;"><span style="width:8px;height:8px;border-radius:2px;background:#3182CE;opacity:0.7;display:inline-block"></span>A Faturar</span></div>
+      </div>
+    
+      <div class="loja-progress">
+        <div class="loja-prog-header">
+          <span class="loja-prog-name">BYD Alphaville</span>
+          <span class="loja-prog-vals">
+            <span style="color:var(--amarelo)">98 fat.</span>
+            <span style="color:#3182CE"> + 60 a fat.</span>
+            &nbsp;/&nbsp;114
+            &nbsp;<strong style="color:var(--verde)">139%</strong>
+            &nbsp;<span style="color:var(--verde)">✓ meta coberta</span>
+          </span>
+        </div>
+        <div class="progress-track">
+          <div class="progress-fill prog-yellow" style="width:86%;border-radius:6px 0 0 6px"></div>
+          <div style="position:absolute;top:0;left:86%;width:14%;height:100%;background:#3182CE;opacity:0.7;border-radius:0 6px 6px 0"></div>
+        </div>
+        <div style="display:flex;gap:12px;margin-top:3px;font-size:10px;"><span style="display:flex;align-items:center;gap:3px;"><span style="width:8px;height:8px;border-radius:2px;background:var(--amarelo);display:inline-block"></span>Faturado</span><span style="display:flex;align-items:center;gap:3px;"><span style="width:8px;height:8px;border-radius:2px;background:#3182CE;opacity:0.7;display:inline-block"></span>A Faturar</span></div>
+      </div>
+    </div>
   </div>
 
   <div class="two-col">
@@ -352,7 +388,13 @@
     </div>
     <div class="pipeline-section">
       <div class="pipeline-title">Pipeline — Estoque Disponível por Marca</div>
-      <div class="funnel" id="funnel-novos"></div>
+      <div class="funnel" id="funnel-novos">
+        <div class="funnel-item">
+          <div class="funnel-label">BYD</div>
+          <div class="funnel-bar-wrap">
+            <div class="funnel-bar" style="width:100%;background:#1A7F4B">182</div>
+          </div>
+        </div></div>
     </div>
   </div>
 
@@ -361,7 +403,7 @@
     <div class="chart-wrap"><canvas id="chart-timeline-novos" style="box-sizing: border-box; display: block; height: 280px; width: 1456px;" width="1821" height="350"></canvas></div>
   </div>
 
-  <div id="ranking-novos-section"><div class="section-header"><h3>🏆 Ranking Vendedores — Abr</h3></div><div class="two-col"><div class="rank-card"><div class="rank-title">Denza Alphaville</div><table class="rank-table"><thead><tr><th>#</th><th>Vendedor</th><th>Vendas</th><th></th></tr></thead><tbody><tr><td class="rank-num">🥇</td><td>CLEBER ROGERIO DOS SANTOS ABRAHAO</td><td><strong>1</strong></td><td class="rank-bar-cell"><div class="rank-mini-bar" style="width:100%"></div></td></tr></tbody></table></div></div></div>
+  <div id="ranking-novos-section"><div class="section-header"><h3>🏆 Ranking Vendedores — Abr</h3></div><div class="two-col"><div class="rank-card"><div class="rank-title">BYD Ibirapuera</div><table class="rank-table"><thead><tr><th>#</th><th>Vendedor</th><th>Vendas</th><th></th></tr></thead><tbody><tr><td class="rank-num">🥇</td><td>SARA MARQUES SIQUEIRA</td><td><strong>16</strong></td><td class="rank-bar-cell"><div class="rank-mini-bar" style="width:100%"></div></td></tr><tr><td class="rank-num">🥈</td><td>TIAGO DE LIMA ROCHA</td><td><strong>7</strong></td><td class="rank-bar-cell"><div class="rank-mini-bar" style="width:44%"></div></td></tr><tr><td class="rank-num">🥉</td><td>MARCEL ROBERTO PIRES AFONSO</td><td><strong>6</strong></td><td class="rank-bar-cell"><div class="rank-mini-bar" style="width:38%"></div></td></tr><tr><td class="rank-num">4</td><td>SIMONE CORDEIRO DOS SANTOS</td><td><strong>6</strong></td><td class="rank-bar-cell"><div class="rank-mini-bar" style="width:38%"></div></td></tr><tr><td class="rank-num">5</td><td>GABRIELA OLIVEIRA DE SOUZA</td><td><strong>6</strong></td><td class="rank-bar-cell"><div class="rank-mini-bar" style="width:38%"></div></td></tr></tbody></table></div><div class="rank-card"><div class="rank-title">BYD Alphaville</div><table class="rank-table"><thead><tr><th>#</th><th>Vendedor</th><th>Vendas</th><th></th></tr></thead><tbody><tr><td class="rank-num">🥇</td><td>LUCAS SANTOS GUIMARAES</td><td><strong>13</strong></td><td class="rank-bar-cell"><div class="rank-mini-bar" style="width:100%"></div></td></tr><tr><td class="rank-num">🥈</td><td>ANDERSON LIMA DA SILVA FERNANDES</td><td><strong>10</strong></td><td class="rank-bar-cell"><div class="rank-mini-bar" style="width:77%"></div></td></tr><tr><td class="rank-num">🥉</td><td>FLAVIA FRANCA DOS SANTOS</td><td><strong>9</strong></td><td class="rank-bar-cell"><div class="rank-mini-bar" style="width:69%"></div></td></tr><tr><td class="rank-num">4</td><td>ISAAC FERNANDES DE MELO</td><td><strong>9</strong></td><td class="rank-bar-cell"><div class="rank-mini-bar" style="width:69%"></div></td></tr><tr><td class="rank-num">5</td><td>MICHELE KAREN CERQUEIRA</td><td><strong>9</strong></td><td class="rank-bar-cell"><div class="rank-mini-bar" style="width:69%"></div></td></tr></tbody></table></div></div></div>
 </div>
 
 <!-- ===== TAB SEMI ===== -->
@@ -396,19 +438,48 @@
 
 <!-- ===== TAB FINANCEIRO ===== -->
 <div id="tab-financeiro" class="tab-content">
-  <div id="atacado-section"></div>
+  <div id="atacado-section">
+    <div class="atacado-card">
+      <div class="atacado-header">
+        <div class="atacado-icon">AT</div>
+        <div><div class="atacado-title">ATACADO — Compras de Veículos Novos</div><div style="font-size:11px;color:rgba(255,255,255,0.5)">Abr 2026</div></div>
+      </div>
+      <div class="atacado-grid">
+        <div class="atacado-item"><div class="atacado-item-label">Total Veículos</div><div class="atacado-item-val">308</div><div class="atacado-item-sub">unidades compradas</div></div>
+        <div class="atacado-item"><div class="atacado-item-label">Valor Total NF</div><div class="atacado-item-val" style="font-size:14px">R$ 59.687.661</div><div class="atacado-item-sub">custo total</div></div>
+        <div class="atacado-item"><div class="atacado-item-label">Ticket Médio</div><div class="atacado-item-val" style="font-size:13px">R$ 193.791</div><div class="atacado-item-sub">por veículo</div></div>
+        <div class="atacado-item"><div class="atacado-item-label">Marcas</div><div class="atacado-item-val">1</div><div class="atacado-item-sub">no período</div></div>
+      </div>
+      <div class="atacado-marca-grid"><div class="atacado-marca-chip">BYD <span>308 un.</span></div></div>
+    </div></div>
   
   <div class="section-header"><h3>Faturamento Vendas</h3></div>
-  <div class="fin-grid" id="fin-cards"></div>
+  <div class="fin-grid" id="fin-cards">
+    <div class="fin-card verde">
+      <div class="fin-label">Vendas Novos</div>
+      <div class="fin-value">164</div>
+      <div class="fin-sub">unidades</div>
+    </div>
+    <div class="fin-card">
+      <div class="fin-label">Vendas Seminovos</div>
+      <div class="fin-value">106</div>
+      <div class="fin-sub">unidades</div>
+    </div>
+    <div class="fin-card azul">
+      <div class="fin-label">Compras Atacado</div>
+      <div class="fin-value">308</div>
+      <div class="fin-sub">R$ 59.687.661</div>
+    </div>
+  </div>
 
   <div class="chart-card">
     <div class="chart-title">Atacado por Marca — Volume e Valor</div>
-    <div class="chart-wrap"><canvas id="chart-atacado-marca"></canvas></div>
+    <div class="chart-wrap"><canvas id="chart-atacado-marca" style="box-sizing: border-box; display: block; height: 280px; width: 1456px;" width="1821" height="350"></canvas></div>
   </div>
 
   <div class="chart-card">
     <div class="chart-title">Atacado Mensal — Quantidade de Veículos</div>
-    <div class="chart-wrap"><canvas id="chart-atacado-mes"></canvas></div>
+    <div class="chart-wrap"><canvas id="chart-atacado-mes" style="box-sizing: border-box; display: block; height: 280px; width: 1456px;" width="1821" height="350"></canvas></div>
   </div>
 </div>
 
@@ -446,7 +517,7 @@
     <div id="upload-log" style="margin-top: 12px; font-size: 11px; color: var(--vermelho); min-height: 18px;">
       <div style="background:var(--verde-light);border:1px solid var(--verde);border-radius:8px;padding:12px;margin-top:8px;">
         <div style="font-size:12px;font-weight:700;color:var(--verde);margin-bottom:8px;">✅ Dados atualizados! Agora salve e suba no GitHub:</div>
-        <button onclick="autoDownloadUpdatedHTML('29/04/2026 09:01')" style="background:var(--verde);color:white;border:none;padding:10px 20px;border-radius:8px;font-size:13px;font-weight:700;cursor:pointer;width:100%;display:flex;align-items:center;justify-content:center;gap:8px;">
+        <button onclick="autoDownloadUpdatedHTML('29/04/2026 09:55')" style="background:var(--verde);color:white;border:none;padding:10px 20px;border-radius:8px;font-size:13px;font-weight:700;cursor:pointer;width:100%;display:flex;align-items:center;justify-content:center;gap:8px;">
           📥 Baixar index.html para subir no GitHub
         </button>
         <div style="font-size:10px;color:var(--text-light);margin-top:8px;text-align:center;">Após baixar → GitHub → index.html → ✏️ → ... → Upload file</div>
@@ -494,7 +565,7 @@ const METAS_SEMI = {...METAS_NOVOS};
 
 const LOJA_MARCA = {"BMW Alphaville":"BMW","BMW Gastão":"BMW","Motorrad Clodomiro":"MOTORRAD","Motorrad Alphaville":"MOTORRAD","Motorrad Gastão":"MOTORRAD","Land Rover":"LAND ROVER","MINI":"MINI","BYD Ibirapuera":"BYD","BYD Alphaville":"BYD","Toyota Nações Unidas":"TOYOTA","Toyota Morumbi":"TOYOTA","Hyundai Barra Funda":"HYUNDAI","Hyundai Guarulhos":"HYUNDAI","Denza Alphaville":"DENZA"};
 // Timestamp da última atualização dos dados
-const DATA_STAMP = "29/04/2026 09:01";
+const DATA_STAMP = "29/04/2026 09:55";
 
 const MES_NAMES = {"2026-01":"Jan","2026-02":"Fev","2026-03":"Mar","2026-04":"Abr"};
 const DIAS_UTEIS_ABRIL = 17; // April 2026 business days total
@@ -1727,36 +1798,32 @@ function openMontadosModal() {
   <div class="modal-box">
     <div class="modal-header">
       <div class="modal-header-left">
-        <div class="modal-header-icon" id="modal-icon">📋</div>
+        <div class="modal-header-icon" id="modal-icon" style="background: rgb(49, 130, 206); color: white;">⏳</div>
         <div>
-          <div class="modal-title" id="modal-title">Detalhes</div>
-          <div class="modal-subtitle" id="modal-subtitle"></div>
+          <div class="modal-title" id="modal-title">⏳ A Faturar — Novos</div>
+          <div class="modal-subtitle" id="modal-subtitle">Estoque com proposta em aberto</div>
         </div>
       </div>
       <button class="modal-close" onclick="closeModal()">✕</button>
     </div>
     <div class="modal-toolbar">
       <input class="modal-search" id="modal-search" placeholder="🔍 Buscar modelo, chassi, cor..." oninput="filterModalTable()">
-      <select class="modal-filter" id="modal-filter-loja" onchange="filterModalTable()">
-        <option value="">Todas as Lojas</option>
-      </select>
-      <select class="modal-filter" id="modal-filter-marca" onchange="filterModalTable()">
-        <option value="">Todas as Marcas</option>
-      </select>
-      <span class="modal-badge" id="modal-count">0 registros</span>
+      <select class="modal-filter" id="modal-filter-loja" onchange="filterModalTable()"><option value="">Todas as Lojas</option><option>BMW Gastão</option></select>
+      <select class="modal-filter" id="modal-filter-marca" onchange="filterModalTable()"><option value="">Todas as Marcas</option><option>BMW</option></select>
+      <span class="modal-badge" id="modal-count">8 registros</span>
     </div>
     <div class="modal-body">
       <div class="modal-table-wrap">
         <table class="modal-table" id="modal-table">
-          <thead id="modal-thead"></thead>
-          <tbody id="modal-tbody"></tbody>
+          <thead id="modal-thead"><tr><th onclick="sortModal(0)" data-col="0">Loja</th><th onclick="sortModal(1)" data-col="1">Marca</th><th onclick="sortModal(2)" data-col="2">Modelo</th><th onclick="sortModal(3)" data-col="3">Chassi</th><th onclick="sortModal(4)" data-col="4">Cor</th><th onclick="sortModal(5)" data-col="5">Nº Proposta</th><th onclick="sortModal(6)" data-col="6">Preço</th></tr></thead>
+          <tbody id="modal-tbody"><tr><td>BMW Gastão</td><td>BMW</td><td>M2 CUP ZC8</td><td class="chassi">WBS21DM00T8F70749</td><td>BRANCO ALPINO </td><td>30148206</td><td class="preco">R$ 620.950</td></tr><tr><td>BMW Gastão</td><td>BMW</td><td>M2 CUP ZC8</td><td class="chassi">WBS21DM08T8F69204</td><td>BRANCO ALPINO </td><td>30147656</td><td class="preco">R$ 620.950</td></tr><tr><td>BMW Gastão</td><td>BMW</td><td>M3 COMPETITION ZA8</td><td class="chassi">WBS21HJ04TFV34339</td><td>CINZA SKYSCRAPER</td><td>30150708</td><td class="preco">R$ 896.178</td></tr><tr><td>BMW Gastão</td><td>BMW</td><td>320I M SPORT ZC8</td><td class="chassi">98M30FV08T4048609</td><td>AZUL ARTIC RACE</td><td>30150915</td><td class="preco">R$ 389.950</td></tr><tr><td>BMW Gastão</td><td>BMW</td><td>X1 SDRIVE20I M SPORT ZB8</td><td class="chassi">98M40EE02T4049009</td><td>SPACE SILVER (M)</td><td>30151360</td><td class="preco">R$ 385.950</td></tr><tr><td>BMW Gastão</td><td>BMW</td><td>X3 30 XDRIVE M SPORT ZB9</td><td class="chassi">WBA51GP0XT9350007</td><td>PRETO SAFIRA</td><td>30150737</td><td class="preco">R$ 515.950</td></tr><tr><td>BMW Gastão</td><td>BMW</td><td>X3 30 XDRIVE M SPORT ZB9</td><td class="chassi">WBA51GP01T9348601</td><td>CINZA SOPHISTO</td><td>30151361</td><td class="preco">R$ 515.950</td></tr><tr><td>BMW Gastão</td><td>BMW</td><td>X5 XDRIVE50E M SPORT ZB8</td><td class="chassi">98M40EU05T4046672</td><td>CINZA MANHATTAN</td><td>30150742</td><td class="preco">R$ 859.950</td></tr></tbody>
         </table>
         <div class="modal-empty" id="modal-empty" style="display:none">Nenhum registro encontrado.</div>
       </div>
     </div>
     <div class="modal-footer">
       <span id="modal-footer-info">Clique nos cabeçalhos para ordenar</span>
-      <span id="modal-total-val"></span>
+      <span id="modal-total-val">Total: R$ 4.805.828</span>
     </div>
   </div>
 </div>
